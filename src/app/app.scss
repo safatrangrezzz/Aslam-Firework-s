@@ -1,0 +1,310 @@
+*{
+    font-family:  "Ubuntu","Poppins", sans-serif;
+    box-sizing: border-box
+} 
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+:root{
+    --white : #fefefe;
+    --gray: #dddddd;
+    --darkblue: #051747;
+    --lightblue: #535f80;
+    --medblue: #081f62;
+
+}
+// .navbarr{
+//     position: sticky;
+//     top: 0px;
+//     z-index: 2;
+// 
+//     background: #ffffff;
+// }
+
+// .btn-section{
+
+//     button{
+//         background: #1a377d;
+//         background-color: black;
+//         border: none;
+//         font-size: 14px;
+//         color: white;
+//         border-radius: 5px;
+//     }
+// }
+
+
+
+// ul{
+//     li{
+//         list-style: none;
+//         font-size: 0.8rem;
+//     }
+// }
+
+// 
+// }
+// .search-section{
+//     background: linear-gradient( 139deg,rgba(7, 7, 228, 0.185) ,rgba(75, 75, 236, 0.568) ,rgba(78, 2, 2, 0.288));
+//     input{
+//         border: none;
+//     }
+// button{
+//         background: #000000;
+//         border: none;
+//         font-size: 12px;
+//         color: white;
+//     }
+// }
+
+// ------------nim--------
+// .slider{
+//     width: 100%;
+//     overflow: hidden;
+// }
+
+// figure{
+//     position: relative;
+//     left: 0;
+//     width: 400%; /* width dikali slide */
+//     animation: 10s slide infinite;
+// }
+
+// .slide{
+//     position: relative;
+//     width: 25%; /* width dibagi slide */
+//     float: left;
+// }
+
+// .slide h1{
+//     font-family: "Caveat", cursive;
+//     position: absolute;
+//     font-size: 3.5em;
+//     width: 100%;
+//     text-align: center;
+//     margin-top: 150px;
+//     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+//     color: white;
+// }
+
+// .slide img{
+//     width: 100%;
+//     height: 250px;
+// }
+
+// @keyframes slide{
+//     0%{
+//         left:0;
+//     }
+//     10%{
+//         left:0;
+//     }
+//     20%{
+//         left:-100%;
+//     }
+//     30%{
+//         left:-100%;
+//     }
+//     40%{
+//         left:-200%;
+//     }
+//     50%{
+//         left:-200%;
+//     }
+//     55%{
+//         left:-300%;
+//     }
+//     65%{
+//         left:-300%;
+//     }
+//     66%{
+//         left:-200%;
+//     }
+//     74%{
+//         left:-200%;
+//     }
+//     75%{
+//         left:-100%;
+//     }
+//     85%{
+//         left:-100%;
+//     }
+//     90%{
+//         left:0;
+//     }
+//     100%{
+//         left:0;
+//     }
+// }
+// ---------anim------
+// .dropdown{
+//     width: 80vw;
+//     select{
+//         background-color: #e4edfd;
+//         width: 65%;
+//         height: 30px;
+//         border: 0.5px solid gray;
+//     }
+// }
+
+// .cat-sec h2{
+//     position: absolute;
+//     top: 130px;
+//     left:85px;
+//     color: rgb(255, 255, 255);
+//     font-weight: bolder;
+//     font-size: 1.5rem;
+
+// }
+
+
+
+ul{
+    li{
+        list-style: none;
+        color: #051747;
+    
+    }
+}
+.content-body{
+    background-color: #dbebfd;
+    height: 1000vh;
+}
+.slider{
+    width: 100%;
+    overflow: hidden;
+}
+
+figure{
+    position: relative;
+    left: 0;
+    width: 400%; /* width dikali slide */
+    animation: 10s slide infinite;
+}
+
+.slide{
+    position: relative;
+    width: 25%; /* width dibagi slide */
+    float: left;
+}
+
+.slide h1{
+    font-family: "Caveat", cursive;
+    position: absolute;
+    font-size: 3.5em;
+    width: 100%;
+    text-align: center;
+    margin-top: 150px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    color: #ffffff
+}
+
+.slide img{
+    width: 100%;
+    height: 250px;
+}
+
+@keyframes slide{
+    0%{
+        left:0;
+    }
+    10%{
+        left:0;
+    }
+    20%{
+        left:-100%;
+    }
+    30%{
+        left:-100%;
+    }
+    40%{
+        left:-200%;
+    }
+    50%{
+        left:-200%;
+    }
+    55%{
+        left:-300%;
+    }
+    65%{
+        left:-300%;
+    }
+    66%{
+        left:-200%;
+    }
+    74%{
+        left:-200%;
+    }
+    75%{
+        left:-100%;
+    }
+    85%{
+        left:-100%;
+    }
+    95%{
+        left:0;
+    }
+    100%{
+        left:0;
+    }
+    
+}
+input{
+    outline: none;
+    border:none;
+
+}
+
+.btn-search{
+    background-color: #2d4793;
+    color:white;
+    outline: none;
+    border:none;
+}
+.product-card {
+  height: 320px;
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-img {
+  height: 180px;
+  width: 100%;
+  object-fit: contain;
+  background: #f3f3f3;
+  border-radius: 6px;
+  padding: 5px;
+}
+.product-name{
+
+    height: 80px;
+    width: 100%;
+}
+.btn-buy{
+    background-color: #051747;
+    color: white;
+
+}
+
+
+
+/* Mobile */
+@media (max-width: 480px) {
+  .slider h1 {
+        font-size: 2.1rem;
+    }
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+    .slider h1 {
+        font-size: 2.8rem;
+    }
+}
+
+
+
