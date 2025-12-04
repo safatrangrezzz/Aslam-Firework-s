@@ -11,6 +11,11 @@
     --lightblue: #535f80;
     --medblue: #081f62;
 
+} 
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 ul{
     li{
