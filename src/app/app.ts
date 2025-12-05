@@ -10,52 +10,351 @@ export class App {
   protected readonly title = signal('Aslam-fireworks');
 
 
-  display:any[] =[
+  displayProducts:any[] =[
 
 
     {name: 'Mori Hanimoon Creakling shot',
       brand: 'Mori',
       price: '449',
       OldPrice: '550',
-      img: 'Mori Honeymoon.jpg'
+      img: 'Mori Honeymoon.jpg',
+      Category: 'fancy'
     },
-  
+    {name: 'Vanitha OneUp Skyshot',
+      brand: 'Vanitha',
+      price: '1099',
+      OldPrice: '1450',
+      img: '1up-out.png',
+       Category: 'singlesky'
+    },  
     {name: 'Mori Color Koti Pots',
       brand: 'Mori',
       price: '399',
       OldPrice: '450',
-      img: 'Mori Color koti.jpg'
+      img: 'Mori Color koti.jpg',
+       Category: 'pots'
     },
-  
+    {name: 'Anil RainGold Sky Shot',
+      brand: 'Anil',
+      price: '799',
+      OldPrice: '999',
+      img: 'Anil Rain Gold.png',
+       Category: 'singlesky'
+    },  
+    {name: 'Vinayga Cappa Ccino',
+      brand: 'Vinayga',
+      price: '1399',
+      OldPrice: '1599',
+      img: 'cappa-ccino-by-vinayaga.png',
+       Category: 'singlesky'
+    },
     {name: 'Vanitha IQ Out Skyshot',
       brand: 'Vanitha',
       price: '999',
       OldPrice: '1450',
-      img: 'iq-out.png'
+      img: 'iq-out.png',
+      Category: 'singlesky'
+    },
+    {name: 'Mori 60 Shot',
+      brand: 'Mori',
+      price: '115058',
+      OldPrice: '1499',
+      img: 'mori-60-shots-2.jpg',
+      Category: 'multisky'
     },
     {name: 'Mori Lagan Munch',
       brand: 'Mori',
       price: '1199',
       OldPrice: '1559',
-      img: 'Mori lagan munch.jpg'
+      img: 'Mori lagan munch.jpg',
+      Category: 'fancy'
     },
-    {name: 'Mori Silver Rain',
-      brand: 'Mori',
-      price: '189',
-      OldPrice: '219',
-      img: 'Mori silver rain.jpg'
+    {name: 'Vanitha Lazzer Gold',
+      brand: 'Vanitha',
+      price: '2529',
+      OldPrice: '3549',
+      img: 'lazergold-out.png',
+      Category: 'fancy'
     },
-    {name: 'Mori Penta Plus Mini Skyshot',
+    {name: 'Vanitha Lazzer Green',
+      brand: 'Vanitha',
+      price: '2529',
+      OldPrice: '3549',
+      img: 'lazergreen.png',
+      Category: 'fancy'
+    },
+    {name: 'Vanitha Lazzer Silver',
+      brand: 'Vanitha',
+      price: '2529',
+      OldPrice: '3549',
+      img: 'lazersilver.png',
+      Category: 'fancy'
+    },
+    {name: 'Vanitha I Word',
+      brand: 'Vanitha',
+      price: '1850',
+      OldPrice: '2249',
+      img: 'iworld-out.png',
+      Category: 'singlesky'
+    },
+    {name: 'Vanitha Jungle Party',
+      brand: 'Vanitha',
+      price: '1750',
+      OldPrice: '2149',
+      img: 'jungleparty-out.png',
+      Category: 'singlesky'
+    },
+    {name: 'Vanitha Pink Out',
+      brand: 'Vanitha',
+      price: '1850',
+      OldPrice: '2249',
+      img: 'pinkout-out.png',
+      Category: 'singlesky'
+    },
+    {name: 'Vanitha Night Angel',
+      brand: 'Vanitha',
+      price: '1150',
+      OldPrice: '1349',
+      img: 'nightangel.png',
+      Category: 'singlesky'
+    },
+    {name: 'Vanitha Sky Copter',
+      brand: 'Vanitha',
+      price: '1750',
+      OldPrice: '2149',
+      img: 'skycopter-out.png',
+      Category: 'singlesky'
+    },
+    {name: 'Supreme 120 Sky Shot',
+      brand: 'Supreme',
+      price: '2250',
+      OldPrice: '2399',
+      img: 'superme 120 del se.jpg',
+      Category: 'multisky'
+    },
+    {name: 'Mori 120 Sky Shot',
       brand: 'Mori',
-      price: '339',
-      OldPrice: '449',
-      img: 'Mori penta.jpg'
+      price: '2199',
+      OldPrice: '2499',
+      img: 'mori-haldi-120-shots-1.jpg',
+      Category: 'multisky'
+    },
+    {name: 'Mori 30 Sky Shot',
+      brand: 'Mori',
+      price: '2199',
+      OldPrice: '2499',
+      img: 'mori-henna-30-shots (1).jpg',
+      Category: 'multisky'
+    },
+    {name: 'Mori Jhoomar 12 Skyshot',
+      brand: 'Mori',
+      price: '499',
+      OldPrice: '559',
+      img: 'mori-jhoomar-12-shot-crackling-raider.jpg',
+      Category: 'fancy'
+    },
+    {name: 'Vanitha Dark Sky Shot',
+      brand: 'Vanitha',
+      price: '1899',
+      OldPrice: '2249',
+      img: 'dark-out.png',
+      Category: 'singlesky'
+    },
+    {name: 'Vanitha Digital Sky Shot',
+      brand: 'Vanitha',
+      price: '1199',
+      OldPrice: '1549',
+      img: 'digital-out.png',
+      Category: 'singlesky'
+    },
+     {name: 'Vanitha Color Koti Pots',
+      brand: 'Vanitha',
+      price: '549',
+      OldPrice: '749',
+      img: 'colourkoti-out.png',
+      Category: 'pots'
     },
     {name: 'Mori Mojto Creakling Pots',
       brand: 'Mori',
       price: '449',
       OldPrice: '699',
-      img: 'mori-mojito-3-pcs.jpg'
+      img: 'mori-mojito-3-pcs.jpg',
+      Category: 'pots'
+    },
+    {name: 'Mori 12 Sky Shot',
+      brand: 'Mori',
+      price: '178',
+      OldPrice: '299',
+      img: 'mori 12.jpg',
+      Category: 'multisky'
+    },
+    {name: 'Mori Color Koti Delex',
+      brand: 'Mori',
+      price: '458',
+      OldPrice: '599',
+      img: 'mori pots delex.jpg',
+      Category: 'pots'
+    },
+    {name: 'Mori Swagat Milan',
+      brand: 'Mori',
+      price: '858',
+      OldPrice: '999',
+      img: 'mori-1.5-Swagat-Mixed-colours-3-Pcs.jpg',
+      Category: 'singlesky'
+    },  
+    {name: 'Vanitha City Sky Shot',
+      brand: 'Mori',
+      price: '999',
+      OldPrice: '1299',
+      img: 'city.png',
+      Category: 'singlesky'
+    },
+    {name: 'Vinayga Gem Park',
+      brand: 'Vinayga',
+      price: '1499',
+      OldPrice: '1959',
+      img: 'gem-park-by-vinayaga.png',
+      Category: 'singlesky'
+    },
+    {name: 'Classic Green Bomb',
+      brand: 'Classic',
+      price: '199',
+      OldPrice: '249',
+      img: 'classic.png',
+      Category: 'bomb'
+    },
+    {name: 'Mori Silver Rain',
+      brand: 'Mori',
+      price: '189',
+      OldPrice: '219',
+      img: 'Mori silver rain.jpg',
+      Category: 'sparkle'
+    },   
+    {name: 'Mori Penta Plus Mini Skyshot',
+      brand: 'Mori',
+      price: '339',
+      OldPrice: '449',
+      img: 'Mori penta.jpg',
+      Category: 'singlesky'
+    },
+    {name: 'Vanitha Chip Mini Sky Shot',
+      brand: 'Mori',
+      price: '599',
+      OldPrice: '649',
+      img: 'chipmix-out.png',
+      Category: 'singlesky'
+    },   
+    {name: 'Mehdi 12 Shot',
+      brand: 'Hurcules',
+      price: '199',
+      OldPrice: '299',
+      img: '12 shot mehdi.jpg',
+      Category: 'multi'
+    },  
+    {name: 'Mori Color Koti Asoka Pots',
+      brand: 'Mori',
+      price: '249',
+      OldPrice: '299',
+      img: 'mori-flower-pots-asoka.jpg',
+      Category: 'pots'
+    },
+    {name: 'Mori Color Koti Big Pots',
+      brand: 'Mori',
+      price: '149',
+      OldPrice: '199',
+      img: 'mori-flower-pots-big.jpg',
+      Category: 'pots'
+    },
+     {name: 'Mori Rocket Bomb Deluxe',
+      brand: 'Mori',
+      price: '290',
+      OldPrice: '350',
+      img: 'rocket-bomb-deluxe.jpg',
+      Category: 'rocket'
+    },
+      {name: 'Mori Bijli 100pcs',
+      brand: 'Mori',
+      price: '108',
+      OldPrice: '70',
+      img: 'mori bijli 100ps.jpg',
+      Category: 'other'
+    },
+     {name: 'Mori Bullet Bomb',
+      brand: 'Mori',
+      price: '79',
+      OldPrice: '100',
+      img: 'bullet-bomb.jpg',
+       Category: 'bomb'
+    },
+    {name: 'Mori JilJil',
+      brand: 'Mori',
+      price: '108',
+      OldPrice: '70',
+      img: 'mori jiljil.jpg',
+      Category: 'sparkle'
+    },
+    {name: 'Mori Color Koti Special Pots',
+      brand: 'Mori',
+      price: '219',
+      OldPrice: '249',
+      img: 'mori-flower-pots-special.jpg',
+      Category: 'pots'
+    },
+     {name: 'Mori Lamba Bullet',
+      brand: 'Mori',
+      price: '70',
+      OldPrice: '109',
+      img: 'mori-lamba-bullet.jpg',
+      Category: 'bomb'
+    },
+    {name: 'Mori Lunik Rocket',
+      brand: 'Mori',
+      price: '350',
+      OldPrice: '489',
+      img: 'mori-lunik-express.jpg',
+      Category: 'rocket'
+    },
+    {name: 'Mori Ground Chakkar Asoka',
+      brand: 'Mori',
+      price: '219',
+      OldPrice: '249',
+      img: 'mori-ground-chakkar-asoka.jpg',
+      Category: 'chakkar'
+    },
+    {name: 'Mori Ground Chakkar Big 25pcs',
+      brand: 'Mori',
+      price: '179',
+      OldPrice: '239',
+      img: 'mori-ground-chakkar-big-25-pcs.jpg',
+      Category: 'chakkar'
+    },    
+    {name: 'Mori Mini Bullet',
+      brand: 'Mori',
+      price: '45',
+      OldPrice: '89',
+      img: 'mori-mini-bullet.jpg',
+      Category: 'bomb'
+    },
+    {name: 'Mori Ground Chakkar Deluxe',
+      brand: 'Mori',
+      price: '379',
+      OldPrice: '499',
+      img: 'mori-ground-chakkar-deluxe.jpg',
+      Category: 'chakkar'
+    },
+    {name: 'Agni Bomb',
+      brand: 'KKk',
+      price: '349',
+      OldPrice: '399',
+      img: 'Agni.png',
+      Category: 'bomb'
     },
   ]
+
+filterProducts(value:any){
+  console.log(value)
+
+}
+
+
 }

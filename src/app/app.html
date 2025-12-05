@@ -1,6 +1,6 @@
-  
+  <div class="container-fluid content-body p-0">
 <header class="">
-     <nav class="container-fluid px-4 px-md-5 border-bottom py-1 py-md-2">
+     <nav class="container-fluid px-4 px-md-5 border-bottom py-1 py-md-2 bg-white">
       <div class="row">
         <div class="col-1 text-center d-md-none fw-semibold me-2 pt-2 fs-2 px-0">☰</div>
         <div class="col-4 col-md-2 p-0"><img src="mylogo.jpg" alt="" width="80"></div>
@@ -18,7 +18,7 @@
  </nav>
 </header>
 <!-- ------------------------main------------- -->
-<div class="container-fluid content-body px-1">
+
   <!-- ----------------------page---------------------- -->
    
   <div class="container-fluid p-0 py-2">
@@ -46,7 +46,7 @@
             </div>
             <div class="slide">
                 <h1>light Up the Night</h1>
-                <img src="bg5.jpeg" alt="">
+                <img src="bg7.jpeg" alt="">
             </div>
             <div class="slide">
                  <h1>light Up the Night</h1>
@@ -59,16 +59,18 @@
     <section id="Category">
     <div class="container-fluid">
       <div class="row justify-content-end">
-        <div class="col-7 p-2">
-              <select class="bg-white p-2 border border-secondary" style="width: 100%; ">
-                <option value="">Select Category.... </option>
-                <option value="">Sparkle's</option>
-                <option value="">Flowers Pots</option>
-                <option value="">Bomb</option>
-                <option value="">Single Sky Shot</option> 
-                <option value="">Multi Color Sky Shot</option> 
-                <option value="">Fancy</option> 
-                <option value="">Other</option> 
+        <div class="col-10 col-md-6 col-lg-7 p-2">
+              <select class="bg-white p-2 border border-secondary" (change)="filterProducts($event)" style="width: 100%; ">
+                <option>Select Category.... </option>
+                <option value="sparkle">Sparkle's</option>
+                <option value="pots">Flowers Pots</option>
+                <option value="bomb">Bomb</option>
+                <option value="rocket">Rocket</option>
+                <option value="singlesky">Single Sky Shot</option> 
+                <option value="multisky">Multi Color Sky Shot</option> 
+                <option value="chakkar">Chakkar</option> 
+                <option value="fancy">Fancy</option> 
+                <option value="other">Other</option> 
               </select>         
               </div> 
         </div>
@@ -78,14 +80,14 @@
   <!-- -------------------------produts list---------------------- -->
   <div class="container-fluid px-0">
   <div class="row g-2 justify-content-center">
-  @for( p of display ; track p){
+  @for( product of displayProducts ; track product){
 <div class="col-6 col-md-4 col-lg-3">
       <div class="product-card p-2 shadow-sm text-center mx-2 mx-md-4">
         
-        <img src="{{p.img}}" class="product-img img-fluid" alt="">
+        <img src="{{product.img}}" class="product-img img-fluid" alt="">
         
-        <h6 class="fw-semibold mt-2 mb-1 product-name d-flex justify-content-center align-items-center">{{ p.name }}</h6>
-        <p class="text-success fw-bold mb-2">₹{{ p.price }}</p>
+        <h6 class="fw-semibold mt-2 mb-1 product-name d-flex justify-content-center align-items-center">{{product.name }}</h6>
+        <p class="text-success fw-bold mb-2">₹{{ product.price }}</p>
         
         <button class="btn btn-buy btn-sm w-100">Buy Now</button>
         
