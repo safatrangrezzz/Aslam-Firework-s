@@ -2,8 +2,6 @@
     font-family:  "Ubuntu","Poppins", sans-serif;
     box-sizing: border-box
 } 
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 
 :root{
@@ -13,6 +11,11 @@
     --lightblue: #535f80;
     --medblue: #081f62;
 
+} 
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 ul{
     li{
@@ -51,7 +54,7 @@ figure{
     text-align: center;
     margin-top: 150px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    color: #ffffff
+    color: red:
 }
 
 .slide img{
