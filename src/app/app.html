@@ -1,6 +1,6 @@
   
-<header>
-     <nav class="container-fluid px-4 px-md-5 border border-bottom">
+<header class="">
+     <nav class="container-fluid px-4 px-md-5 border-bottom py-1 py-md-2">
       <div class="row">
         <div class="col-1 text-center d-md-none fw-semibold me-2 pt-2 fs-2 px-0">☰</div>
         <div class="col-4 col-md-2 p-0"><img src="mylogo.jpg" alt="" width="80"></div>
@@ -21,10 +21,10 @@
 <div class="container-fluid content-body px-1">
   <!-- ----------------------page---------------------- -->
    
-  <div class="container-fluid p-0 py-1">
-   <div class="row p-0 justify-content-end px-2">
-  <form class=" col-12 col-md-8  d-flex px-2" role="search">
-            <input class="rounded-start-3 px-3" style="width: 100%;"
+  <div class="container-fluid p-0 py-2">
+   <div class="row p-0 justify-content-end px-2 ">
+  <form class=" col-12 col-md-8  d-flex px-2">
+            <input class="rounded-start-3 p-2" style="width: 100%;"
                   placeholder="Search for products…" >
             <button class=" px-2 btn-search rounded-end fs-5">
                 <i class="bi bi-search"></i>
@@ -79,8 +79,8 @@
   <div class="container-fluid px-0">
   <div class="row g-2 justify-content-center">
   @for( p of display ; track p){
-    <div class="col-6 col-md-4 col-lg-2">
-      <div class="product-card p-2 shadow-sm text-center">
+<div class="col-6 col-md-4 col-lg-3">
+      <div class="product-card p-2 shadow-sm text-center mx-2 mx-md-4">
         
         <img src="{{p.img}}" class="product-img img-fluid" alt="">
         

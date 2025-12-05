@@ -10,8 +10,6 @@ export class App {
   protected readonly title = signal('Aslam-fireworks');
 
 
-temp= "ff"
-  temdp= "ff"
   display:any[] =[
 
 
