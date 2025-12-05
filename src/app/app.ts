@@ -8,10 +8,8 @@ import { Component, signal } from '@angular/core';
 })
 export class App {
   protected readonly title = signal('Aslam-fireworks');
-
-
-  displayProducts:any[] =[
-
+ 
+  Products:any[]=[
 
     {name: 'Mori Hanimoon Creakling shot',
       brand: 'Mori',
@@ -249,7 +247,7 @@ export class App {
       price: '199',
       OldPrice: '299',
       img: '12 shot mehdi.jpg',
-      Category: 'multi'
+      Category: 'multisky'
     },  
     {name: 'Mori Color Koti Asoka Pots',
       brand: 'Mori',
@@ -350,11 +348,17 @@ export class App {
       Category: 'bomb'
     },
   ]
+   displayProducts:any[] = this.Products
 
 filterProducts(value:any){
-  console.log(value)
+  const userselect = (value.target as HTMLSelectElement).value
+  if(userselect == 'all'){
+        this.displayProducts = this.Products
+  }else{
 
-}
+    this.displayProducts= this.Products.filter((product)=>product.Category == userselect)
+  }
+ 
 
-
+  }
 }
