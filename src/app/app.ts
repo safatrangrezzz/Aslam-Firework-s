@@ -11,6 +11,7 @@ export class App {
 
 
 temp= "ff"
+  temdp= "ff"
   display:any[] =[
 
 
