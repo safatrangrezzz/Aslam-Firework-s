@@ -13,7 +13,7 @@ export class App {
   display:any[] =[
 
 
-    {name: 'Mori Hanimoon 12 creakling shot',
+    {name: 'Mori Hanimoon Creakling shot',
       brand: 'Mori',
       price: '449',
       OldPrice: '550',
@@ -24,7 +24,7 @@ export class App {
       brand: 'Mori',
       price: '399',
       OldPrice: '450',
-      img: 'Mori Color koti.jpg'
+      img: 'Mori Color Koti.jpg'
     },
   
     {name: 'Vanitha IQ Out Skyshot',
@@ -45,7 +45,7 @@ export class App {
       OldPrice: '219',
       img: 'Mori silver rain.jpg'
     },
-    {name: 'Mori Penta Plus Mini skyshot',
+    {name: 'Mori Penta Plus Mini Skyshot',
       brand: 'Mori',
       price: '339',
       OldPrice: '449',
