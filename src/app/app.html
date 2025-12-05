@@ -85,7 +85,8 @@
         <img src="{{p.img}}" class="product-img img-fluid" alt="">
         
         <h6 class="fw-semibold mt-2 mb-1 product-name d-flex justify-content-center align-items-center">{{ p.name }}</h6>
-        <p class="text-success fw-bold mb-2">₹{{ p.price }}</p>
+        <p class="text-success fw-bold mb-1 fs-5">₹{{ p.price }}</p>
+        <p class="text-secondary text-decoration-line-through fw-medium mb-2">₹{{ p.OldPrice }}</p>
         
         <button class="btn btn-buy btn-sm w-100">Buy Now</button>
         

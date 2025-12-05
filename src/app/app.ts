@@ -15,39 +15,46 @@ export class App {
 
     {name: 'Mori Hanimoon 12 creakling shot',
       brand: 'Mori',
-      price: '450',
+      price: '449',
+      OldPrice: '550',
       img: 'Mori Honeymoon.jpg'
     },
   
     {name: 'Mori Color Koti Pots',
       brand: 'Mori',
-      price: '400',
+      price: '399',
+      OldPrice: '450',
       img: 'Mori Color koti.jpg'
     },
   
     {name: 'Vanitha IQ Out Skyshot',
       brand: 'Vanitha',
-      price: '1300',
+      price: '999',
+      OldPrice: '1450',
       img: 'iq-out.png'
     },
     {name: 'Mori Lagan Munch',
       brand: 'Mori',
-      price: '1900',
+      price: '1199',
+      OldPrice: '1559',
       img: 'Mori lagan munch.jpg'
     },
     {name: 'Mori Silver Rain',
       brand: 'Mori',
-      price: '1900',
+      price: '189',
+      OldPrice: '219',
       img: 'Mori silver rain.jpg'
     },
     {name: 'Mori Penta Plus Mini skyshot',
       brand: 'Mori',
-      price: '1900',
+      price: '339',
+      OldPrice: '449',
       img: 'Mori penta.jpg'
     },
     {name: 'Mori Mojto Creakling Pots',
       brand: 'Mori',
-      price: '1900',
+      price: '449',
+      OldPrice: '699',
       img: 'mori-mojito-3-pcs.jpg'
     },
   ]
