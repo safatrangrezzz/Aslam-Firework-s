@@ -24,7 +24,7 @@ export class App {
       brand: 'Mori',
       price: '399',
       OldPrice: '450',
-      img: 'Mori Color Koti.jpg'
+      img: 'Mori Color koti.jpg'
     },
   
     {name: 'Vanitha IQ Out Skyshot',
