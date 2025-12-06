@@ -1,6 +1,8 @@
 *{
     font-family:  "Ubuntu","Poppins", sans-serif;
-    box-sizing: border-box
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 } 
 
 
@@ -13,6 +15,10 @@
 
 } 
 
+.content-body{
+    background-color: #dbebfd;
+    min-height: 100vh;
+}
 ul{
     li{
         list-style: none;
@@ -20,14 +26,17 @@ ul{
     
     }
 }
-.content-body{
-    background-color: #dbebfd;
-    min-height: 100vh;
+.btn-search{
+    background-color: #2d4793;
+    color:white;
+    outline: none;
+    border:none;
 }
 .slider{
     width: 100%;
     overflow: hidden;
 }
+
 
 figure{
     position: relative;
@@ -110,12 +119,7 @@ input{
 
 }
 
-.btn-search{
-    background-color: #2d4793;
-    color:white;
-    outline: none;
-    border:none;
-}
+
 .product-card {
   height: 320px;
   border-radius: 8px;

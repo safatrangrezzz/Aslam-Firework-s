@@ -3,16 +3,18 @@
      <nav class="container-fluid px-4 px-md-5 border-bottom border-dark py-1 py-md-2 bg-white">
       <div class="row">
         <div class="col-1 text-center d-md-none fw-semibold me-2 pt-2 fs-2 px-0">☰</div>
-        <div class="col-4 col-md-2 p-0"><img src="mylogo.jpg" alt="" width="80"></div>
-        <div class="col-7 text-center  ms-auto d-none d-md-block">
-          <ul class= "m-0 px-0 pt-2 d-flex justify-content-around ">
-            <li>Home</li>
-            <li>Our Products</li>
-            <li>Safety Guide</li>
-            <li>Our Story</li>
+        <div class="col-4 col-md-2"><img src="mylogo.jpg" alt="" width="80"></div>
+        <div class="col-7 text-center  d-none d-md-block">
+          <ul class= "pt-2 d-flex justify-content-around fst-normal fw-semibold">
+            <li>HOME</li>
+            <li>OUR PRODUCTS</li>
+            <li>SAFETY GUIDE</li>
+            <li>OUR STORY</li>
           </ul>
         </div>
-        <div class="col-4 col-md-3  ms-auto d-flex align-items-center justify-content-center p-0"><i class="bi bi-person-square fs-5 me-2"></i>Login <i class="bi bi-cart-plus-fill ms-3 ms-md-5 fs-5 me-2"></i>Cart
+        <div class="col-6 col-md-3 ms-auto d-flex align-items-center justify-content-end justify-content-lg-center">
+          <div class="mx-1 mx-lg-3 rounded"><i class="bi bi-person-square fs-5 me-1"></i><span> Login </span></div>
+         <div class="mx-1 mx-lg-3 rounded"><i class="bi bi-cart-plus-fill  fs-5 me-1"></i> <span>Cart </span></div>
         </div>
       </div>
  </nav>
@@ -21,12 +23,12 @@
 
   <!-- ----------------------page---------------------- -->
    
-  <div class="container-fluid p-0 py-2">
-   <div class="row p-0 justify-content-end px-2 ">
-  <form class=" col-12 col-md-8  d-flex px-2">
-            <input class="rounded-start-3 py-2 px-3" style="width: 100%;"
+  <div class="container-fluid py-2 py-md-3">
+   <div class="row justify-content-center justify-content-lg-end px-1">
+  <form class="col-12 col-md-10 col-lg-8 d-flex">
+            <input class="rounded-start py-2 px-3" style="width: 100%;"
                   placeholder="Search for products…" >
-            <button class=" px-2 btn-search rounded-end fs-5">
+            <button class="px-3 btn-search rounded-end fs-5">
                 <i class="bi bi-search"></i>
             </button>
         </form>
@@ -78,11 +80,11 @@
     </section>
    
   <!-- -------------------------produts list---------------------- -->
-  <div class="container-fluid px-0">
-  <div class="row g-2 justify-content-center">
+  <div class="container-fluid bg-warning">
+  <div class="row justify-content-center">
   @for( product of displayProducts ; track product){
 <div class="col-6 col-md-4 col-lg-3">
-      <div class="product-card p-2 shadow-sm text-center mx-2 mx-md-4">
+      <div class="product-card p-2 shadow-sm text-center m-2 mx-md-4">
         
         <img src="{{product.img}}" class="product-img img-fluid" alt="">
         
@@ -102,16 +104,16 @@
 
 
 
-  <!-- --------------pageend------------- -->
-   </div>
-   <!-- ---------------foooter------------- -->
-      
+<!-- ---------------foooter------------- -->
 
 
 
 
 
-
+<!-- --------------pageend-------------ka div niche-->
+  
+  
+</div>
 
 
 
