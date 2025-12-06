@@ -12,14 +12,32 @@
             <li>OUR STORY</li>
           </ul>
         </div>
-        <div class="col-6 col-md-3 ms-auto d-flex align-items-center justify-content-end justify-content-lg-center">
-          <div class="mx-2 mx-lg-3 rounded"><i class="bi bi-person-square fs-5 me-1"></i><span> Login </span></div>
-         <div class="mx-2 mx-lg-3 rounded"><i class="bi bi-cart-plus-fill  fs-5 me-1"></i> <span>Cart </span></div>
+        <div class="login col-6 col-md-3 ms-auto d-flex align-items-center justify-content-end justify-content-lg-center">
+          <div class="mx-2 mx-lg-3 rounded"><i class="bi bi-person-square fs-5 me-1" (click)="logintouch()" ></i><span (click)="logintouch()"> Login </span></div>
+         <div class=" cart mx-2 mx-lg-3 rounded"><i class="bi bi-cart-plus-fill  fs-5 me-1" (click)="logintouch()" ></i> <span (click)="logintouch()">Cart </span></div>
         </div>
       </div>
  </nav>
 </header>
 <!-- ------------------------main------------- -->
+ <!-- <-------------------------Doilog box strt------------------------ -->
+  @if(diologBox){
+    <div class="divbody">
+      <div class="dbox">
+        <form>
+          <h2>Login</h2>
+          <label class="fw-semibold">Email or Phone Number</label>
+          <input type="text" placeholder="Email or Phone number">
+          <label class="fw-semibold">Password</label>
+          <input type="password" placeholder="Enter Password">
+          <button (click)="sumbitbtn()">Login</button>
+          <div><p>Not ragistered?</p><span (click)="sumbitbtn()">Creat an account</span></div>
+        </form>
+      </div>
+
+    </div>
+  }
+ <!-- <-------------------------Doilog box end------------------------ -->
 
   <!-- ----------------------page---------------------- -->
    

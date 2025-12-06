@@ -8,12 +8,14 @@ import { Component, signal } from '@angular/core';
 })
 export class App {
   protected readonly title = signal('Aslam-fireworks');
+
+  diologBox:boolean = false
  
   Products:any[]=[
 
     {name: 'Mori Hanimoon Creakling shot',
       brand: 'Mori',
-      price: '449',
+      price: '449', 
       OldPrice: '550',
       img: 'Mori Honeymoon.jpg',
       Category: 'fancy'
@@ -360,5 +362,13 @@ filterProducts(value:any){
   }
  
 
+  }
+  logintouch(){
+    this.diologBox = !this.diologBox
+
+  }
+  sumbitbtn(){
+    alert('something went wrong!!')
+    this.diologBox = !this.diologBox
   }
 }
