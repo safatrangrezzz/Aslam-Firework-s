@@ -62,8 +62,8 @@ ul{
             input{
                 width: 100%;
                 padding: 5px 10px;
-                border: none
-            ;
+                border: none;
+            
             }
             button{
                 width: 100%;
@@ -116,7 +116,7 @@ figure{
     position: relative;
     left: 0;
     width: 400%; /* width dikali slide */
-    animation: 10s slide infinite;
+    animation: 30s slide infinite;
 }
 
 .slide{
