@@ -2,14 +2,14 @@
 <header>
      <nav class="container-fluid px-4 px-md-5 border-bottom border-dark py-1 py-md-2 bg-white">
       <div class="row">
-        <div class="col-1 text-center d-md-none fw-semibold me-2 pt-2 fs-2 px-0">☰</div>
+        <div class="col-1 text-center d-lg-none fw-semibold me-2 fs-1 pt-1 pb-2">☰</div>
         <div class="col-4 col-md-2"><img src="mylogo.jpg" alt="" width="80"></div>
-        <div class="col-7 text-center  d-none d-md-block">
-          <ul class= "pt-2 d-flex justify-content-around fst-normal fw-semibold">
-            <li>HOME</li>
-            <li>OUR PRODUCTS</li>
-            <li>SAFETY GUIDE</li>
-            <li>OUR STORY</li>
+        <div class="col-7 text-center d-none d-lg-block">
+          <ul class= "pt-2 d-flex justify-content-center fst-normal fw-semibold">
+            <li class="mx-1"> <a routerLink="home" routerLinkActive="active" class="p-3">HOME</a></li>
+            <li class="mx-1"> <a routerLink="products" routerLinkActive="active" class="p-3">PRODUCTS</a></li>
+            <li class="mx-1"> <a routerLink="safety" routerLinkActive="active" class="p-3">SAFETY GUIDE</a></li>
+            <li class="mx-1"> <a routerLink="about" routerLinkActive="active" class="p-3">ABOUT US</a></li>
           </ul>
         </div>
         <div class="login col-6 col-md-3 ms-auto d-flex align-items-center justify-content-end justify-content-lg-center">
@@ -75,48 +75,8 @@
         </figure>
     </div>
     </section>
-
-    <section id="Category">
-    <div class="container-fluid">
-      <div class="row justify-content-end">
-        <div class="col-10 col-md-6 col-lg-7 p-2">
-              <select class="bg-white p-2 border border-secondary" (change)="filterProducts($event)" style="width: 100%; ">
-                <option value="all">Select Category.... </option>
-                <option value="sparkle">Sparkle's</option>
-                <option value="pots">Flowers Pots</option>
-                <option value="bomb">Bomb</option>
-                <option value="rocket">Rocket</option>
-                <option value="singlesky">Single Sky Shot</option> 
-                <option value="multisky">Multi Color Sky Shot</option> 
-                <option value="chakkar">Chakkar</option> 
-                <option value="fancy">Fancy</option> 
-                <option value="other">Other</option> 
-              </select>         
-              </div> 
-        </div>
-     </div>
-    </section>
-   
-  <!-- -------------------------produts list---------------------- -->
-  <div class="container-fluid">
-  <div class="row justify-content-center">
-  @for( product of displayProducts ; track product){
-<div class="col-6 col-md-4 col-lg-3">
-      <div class="product-card p-2 shadow-sm text-center m-2 mx-md-4">
-        
-        <img src="{{product.img}}" class="product-img img-fluid" alt="">
-        
-        <h6 class="fw-semibold mt-2 mb-1 product-name d-flex justify-content-center align-items-center">{{product.name }}</h6>
-        <p class="text-success fw-bold mb-2">₹{{ product.price }}</p>
-        
-        <button class="btn btn-buy btn w-100 py-1">Buy Now</button>
-        
-      </div>
-    </div>
-  }
-
-  </div>
-</div> 
+    <router-outlet></router-outlet>
+    
 
 
 

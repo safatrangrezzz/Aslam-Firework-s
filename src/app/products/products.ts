@@ -1,15 +1,13 @@
-import { Component, signal } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  imports: [RouterOutlet,RouterLink,RouterLinkActive],
-  templateUrl: './app.html',
-  styleUrl: './app.scss'
+  selector: 'app-products',
+  imports: [],
+  templateUrl: './products.html',
+  styleUrl: './products.scss',
 })
-export class App {
-  protected readonly title = signal('Aslam-fireworks');
- 
+export class Products {
+  
   Products:any[]=[
 
     {name: 'Mori Hanimoon Creakling shot',
@@ -56,7 +54,7 @@ export class App {
     },
     {name: 'Mori 60 Shot',
       brand: 'Mori',
-      price: '115058',
+      price: '1150',
       OldPrice: '1499',
       img: 'mori-60-shots-2.jpg',
       Category: 'multisky'
@@ -178,7 +176,7 @@ export class App {
       price: '449',
       OldPrice: '699',
       img: 'mori-mojito-3-pcs.jpg',
-      Category: 'pots'
+      Category: 'fancy'
     },
     {name: 'Mori 12 Sky Shot',
       brand: 'Mori',
@@ -362,4 +360,5 @@ filterProducts(value:any){
  
 
   }
+
 }
