@@ -56,7 +56,7 @@ export class App {
     },
     {name: 'Mori 60 Shot',
       brand: 'Mori',
-      price: '115058',
+      price: '1150',
       OldPrice: '1499',
       img: 'mori-60-shots-2.jpg',
       Category: 'multisky'
