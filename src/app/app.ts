@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { BannerSection } from './banner-section/banner-section';
+import { Footer } from './footer/footer';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,RouterLink,RouterLinkActive,BannerSection],
+  imports: [RouterOutlet,RouterLink,RouterLinkActive,Footer],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

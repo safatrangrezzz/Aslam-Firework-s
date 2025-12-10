@@ -3,32 +3,29 @@
   margin: 0;
 }
 
-.cat-box{
-     flex-wrap: wrap;
+h4{
+  color: #051747;
 }
 .img-box{
-  margin: 10px;
-  height: 270px;
-  width: 250px;
-  transition: all ease-in 0.2s;
-
-
-  .cat-box-img{
-    width: 100%;
-    height: 230px;
-    border-radius: 10px 10px 0px 0px;
-
+  height: 220px;
+  width: 220px;
 }
-p{
-  color: #ffffff;
+.img-flu{
+  border-radius: 10px 10px 0px 0px;
+  height: 100%;
+  width: 100%;
+}
+.cat-name{
   background-color: #051747;
+  color: white;
   border-radius: 0px 0px 10px 10px;
 }
+.img-box:hover .card-container {
+  color: black;
+  transition: all ease-in 0.2s;
+  transform:scale(1.03) ;
 }
-.img-box:hover{
-   transform: scale(1.03);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
+
 
 .facilities-box{
   
