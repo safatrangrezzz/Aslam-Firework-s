@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { BannerSection } from '../banner-section/banner-section';
 
 @Component({
   selector: 'app-products',
-  imports: [],
+  imports: [BannerSection],
   templateUrl: './products.html',
   styleUrl: './products.scss',
 })
