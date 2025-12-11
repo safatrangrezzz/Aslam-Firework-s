@@ -13,6 +13,10 @@ export class App {
   protected readonly title = signal('Aslam-fireworks');
 
   menuStatus:boolean = true
+
+  ulClick(){
+    this.menuStatus = true
+  }
  
   Products:any[]=[
 
