@@ -5,7 +5,7 @@
         <div class="col-1 text-center d-md-none fw-semibold me-2 fs-1 pt-1 pb-2" (click)="menuOpen()">{{menuStatus ? '☰' : '✖'}}</div>
         <div class="col-4 col-md-2"><img src="mylogo.jpg" alt="" width="80"></div>
         <div class="col text-center menu-bar d-md-block" [ngClass]="menuStatus ? 'd-none' : 'd-block'">
-          <ul class= "pt-2 d-flex justify-content-center fst-normal fw-semibold">
+          <ul class= "pt-2 d-flex justify-content-center fst-normal fw-semibold" (click)="ulClick()">
             <li class="mx-lg-3"> <a routerLink="home" routerLinkActive="active" class="p-3">HOME</a></li>
             <li class="mx-lg-3"> <a routerLink="products" routerLinkActive="active" class="p-3">PRODUCTS</a></li>
             <li class="mx-lg-3"> <a routerLink="safety" routerLinkActive="active" class="p-3">SAFETY GUIDE</a></li>
