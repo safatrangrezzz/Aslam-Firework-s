@@ -15,15 +15,18 @@ h4{
   height: 100%;
   width: 100%;
 }
+a{
+  text-decoration: none;
+}
 .cat-name{
   background-color: #051747;
   color: white;
   border-radius: 0px 0px 10px 10px;
 }
-.img-box:hover .card-container {
+.img-box:hover {
   color: black;
   transition: all ease-in 0.2s;
-  transform:scale(1.03) ;
+  transform:scale(1.02) ;
 }
 
 
