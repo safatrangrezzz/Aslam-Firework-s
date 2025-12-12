@@ -27,8 +27,7 @@ li{
 ul{
     li{
         list-style: none;
-        color: #051747;
-    
+        color: #051747;  
     }
 }
 
@@ -45,20 +44,21 @@ ul{
         z-index: 5;
         background-color: rgba(255, 255, 255, 0.959);
         border-radius: 0px 0px 10px 0px;
-        height: 40vh;
+
         li{
-            margin: 10px 20px
-
+            margin:  20px;
+            font-size: 13px;
         }
-        .setting{
-            
-        }
-
-     
-        
     }
 }
-
+ @media (min-width: 768px) and (max-width:991px){
+    ul{
+        padding: 0px 30px;
+        li{
+            font-size: 13px;
+        }
+    }
+ }
 
 
 

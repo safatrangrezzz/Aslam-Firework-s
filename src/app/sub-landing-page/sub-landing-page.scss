@@ -6,15 +6,12 @@
 h4{
   color: #051747;
 }
-.img-box{
-  height: 220px;
-  width: 220px;
+.img{
+  height: 200px;
+  width: 180px;
+
 }
-.img-flu{
-  border-radius: 10px 10px 0px 0px;
-  height: 100%;
-  width: 100%;
-}
+
 a{
   text-decoration: none;
 }
@@ -23,7 +20,7 @@ a{
   color: white;
   border-radius: 0px 0px 10px 10px;
 }
-.img-box:hover {
+.img:hover {
   color: black;
   transition: all ease-in 0.2s;
   transform:scale(1.02) ;

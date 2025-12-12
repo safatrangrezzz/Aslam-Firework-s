@@ -1,19 +1,19 @@
   <div class="container-fluid content-body">
 <header>
-     <nav class="container-fluid px-2 ps-md-4 border-bottom border-dark py-1 py-md-2 bg-white">
+     <nav class="container-fluid px-3 px-md-3 py-1 py-md-2 bg-white">
       <div class="row justify-content-between">
         <div class="col-1 text-center d-md-none fw-semibold me-2 fs-1 pt-1 pb-2" (click)="menuOpen()">{{menuStatus ? '☰' : '✖'}}</div>
         <div class="col-4 col-md-2 me-auto"><img src="mylogo.jpg" alt="" width="80"></div>
         <div class="col text-center menu-bar d-md-block" [ngClass]="menuStatus ? 'd-none' : 'd-block'">
-          <ul class= "pt-2 d-flex justify-content-between justify-content-lg-center fst-normal fw-semibold" (click)="ulClick()">
+          <ul class= "pt-2 d-flex justify-content-between justify-content-lg-center fst-normal fw-semibold fs-6" (click)="ulClick()">
             <li class="mx-lg-3"> <a routerLink="home" routerLinkActive="active" class="p-2">HOME</a></li>
             <li class="mx-lg-3"> <a routerLink="products" routerLinkActive="active" class="p-2">PRODUCTS</a></li>
             <li class="mx-lg-3"> <a routerLink="safety" routerLinkActive="active" class="p-2">SAFETY GUIDE</a></li>
             <li class="mx-lg-3"> <a routerLink="about" routerLinkActive="active" class="p-2">ABOUT US</a></li>
-            <li class="mx-lg-3 mt-auto"> <a routerLink="setting" routerLinkActive="active" class="p-2">SETTINGS</a></li>
+            <li class="mx-lg-3"> <a routerLink="setting" routerLinkActive="active" class="p-2">SETTINGS</a></li>
           </ul>
         </div>
-        <div class="col-6 col-md-auto d-flex align-items-center justify-content-end justify-content-md-center justify-content-lg-center ps-md-2 pe-3 pe-md-0">
+        <div class="col-6 col-md-auto d-flex align-items-center justify-content-end justify-content-md-center  ps-md-2 pe-3 pe-md-0">
           <button class="btn btn-outline-success px-2 py-1" (click)="goWhatsapp()"> <i class="bi bi-whatsapp fs-5 me-2 me-md-1"></i>Call Us</button>
           <!-- <div class=" mx-4 mx-md-3 "><i class="bi bi-person-square fs-5 me-2 me-md-1 " ></i><span> Login </span></div> -->
          <!-- <div class=" cart mx-lg-3"><i class="bi bi-cart-plus-fill  fs-5 me-2 me-md-1 " ></i> <span >Cart </span></div> -->
