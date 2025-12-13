@@ -1,1 +1,56 @@
-<button (click)="logout()">Log Out</button>
+
+<section class="container-fluid ">
+    <div class="btn-div">
+        <button (click)="logout()">Log Out</button>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row w-100">
+            <div class="container">
+                <div class="row w-100 products-name">
+                <div class="col">
+                    <h1>Products Image</h1>
+                </div>
+                <div class="col-4">
+                    <h1>Products Name</h1>
+                </div>
+                <div class="col">
+                    <h1>Products Brand</h1>
+                </div>
+                <div class="col">
+                    <h1>Products Prices</h1>
+                </div>
+                
+                <div class="col">
+                    <h1>Products Category</h1>
+                </div>
+            </div>
+            </div>
+    @for(data of dataBaseData; track  data ){
+
+        <div class="row w-100 data-box">
+        <div class="col">
+                <img src="{{data.img}}" alt="">
+            </div>
+            
+        <div class="col-4">
+                <h3>{{data.name}}</h3>
+            </div>
+            
+        <div class="col ">
+                <h3>{{data.brand}}</h3>
+            </div>
+            
+        <div class="col ">
+                <h3>{{data.price}}</h3>
+            </div>
+            
+        <div class="col ">
+                <h3>{{data.Category}}</h3>
+            </div>
+        </div>
+    }
+    </div>
+</div>
+
+</section>

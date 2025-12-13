@@ -19,7 +19,7 @@ export class Products {
 
   constructor(private _dataBaseService:DataBaseService){
 
-    this.Products = _dataBaseService.sendData();
+    this.Products = _dataBaseService.getData();
     console.log(this.Products)
     this.displayProducts = this.Products
   }

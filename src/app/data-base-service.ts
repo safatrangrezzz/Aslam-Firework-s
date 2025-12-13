@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class DataBaseService {
   
-  private productsData:any[]=[
+   productsData:any[]=[
     {name: 'Mori Hanimoon Creakling shot',
       brand: 'Mori',
       price: '449',
@@ -343,7 +343,7 @@ export class DataBaseService {
       Category: 'bomb'
     },
   ]
-  sendData(){
+  getData(){
     return this.productsData
   }
 }
