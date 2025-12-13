@@ -1,7 +1,7 @@
 
 <section class="container-fluid ">
-    <div class="btn-div">
-        <button (click)="logout()">Log Out</button>
+    <div class="btn-div w-100 d-flex justify-content-end p-3">
+        <button class="btn p-1" (click)="logout()">Log Out</button>
     </div>
 
     <div class="container-fluid">
@@ -29,7 +29,7 @@
     @for(data of dataBaseData; track  data ){
 
         <div class="row w-100 data-box">
-        <div class="col">
+        <div class="col text-center">
                 <img src="{{data.img}}" alt="">
             </div>
             
