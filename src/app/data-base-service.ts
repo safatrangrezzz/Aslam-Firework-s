@@ -15,14 +15,14 @@ export class DataBaseService {
     },
     {name: 'Vanitha OneUp Skyshot',
       brand: 'Vanitha',
-      price: '1099',
+      price: '2399',
       OldPrice: '1450',
       img: '1up-out.png',
        Category: 'singlesky'
     },  
     {name: 'Mori Color Koti Pots',
       brand: 'Mori',
-      price: '399',
+      price: '389',
       OldPrice: '450',
       img: 'Mori Color koti.jpg',
        Category: 'pots'
@@ -36,14 +36,14 @@ export class DataBaseService {
     },  
     {name: 'Vinayga Cappa Ccino',
       brand: 'Vinayga',
-      price: '1399',
+      price: '2699',
       OldPrice: '1599',
       img: 'cappa-ccino-by-vinayaga.png',
        Category: 'singlesky'
     },
     {name: 'Vanitha IQ Out Skyshot',
       brand: 'Vanitha',
-      price: '999',
+      price: '2499',
       OldPrice: '1450',
       img: 'iq-out.png',
       Category: 'singlesky'
@@ -85,7 +85,7 @@ export class DataBaseService {
     },
     {name: 'Vanitha I Word',
       brand: 'Vanitha',
-      price: '1850',
+      price: '2350',
       OldPrice: '2249',
       img: 'iworld-out.png',
       Category: 'singlesky'
@@ -106,7 +106,7 @@ export class DataBaseService {
     },
     {name: 'Vanitha Night Angel',
       brand: 'Vanitha',
-      price: '1250',
+      price: '2350',
       OldPrice: '1349',
       img: 'nightangel.png',
       Category: 'singlesky'
@@ -155,7 +155,7 @@ export class DataBaseService {
     },
     {name: 'Vanitha Digital Sky Shot',
       brand: 'Vanitha',
-      price: '1299',
+      price: '2399',
       OldPrice: '1549',
       img: 'digital-out.png',
       Category: 'singlesky'
@@ -197,14 +197,14 @@ export class DataBaseService {
     },  
     {name: 'Vanitha City Sky Shot',
       brand: 'Mori',
-      price: '1259',
+      price: '2459',
       OldPrice: '1299',
       img: 'city.png',
       Category: 'singlesky'
     },
     {name: 'Vinayga Gem Park',
       brand: 'Vinayga',
-      price: '2799',
+      price: '2899',
       OldPrice: '1959',
       img: 'gem-park-by-vinayaga.png',
       Category: 'singlesky'
