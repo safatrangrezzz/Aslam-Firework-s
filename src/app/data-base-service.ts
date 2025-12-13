@@ -197,14 +197,14 @@ export class DataBaseService {
     },  
     {name: 'Vanitha City Sky Shot',
       brand: 'Mori',
-      price: '1299',
+      price: '1259',
       OldPrice: '1299',
       img: 'city.png',
       Category: 'singlesky'
     },
     {name: 'Vinayga Gem Park',
       brand: 'Vinayga',
-      price: '1499',
+      price: '2799',
       OldPrice: '1959',
       img: 'gem-park-by-vinayaga.png',
       Category: 'singlesky'
@@ -323,7 +323,7 @@ export class DataBaseService {
     },    
     {name: 'Mori Mini Bullet',
       brand: 'Mori',
-      price: '45',
+      price: '65',
       OldPrice: '89',
       img: 'mori-mini-bullet.jpg',
       Category: 'bomb'
