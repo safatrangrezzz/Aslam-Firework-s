@@ -12,10 +12,11 @@ export class Products {
 
 
 
-
+noProductsfound:boolean= false
+inputval:any = ''
   
   Products:any[]=[];
-   displayProducts:any[]=[]
+  displayProducts:any[]=[]
 
   constructor(private _dataBaseService:DataBaseService){
 
@@ -35,5 +36,22 @@ filterProducts(value:any){
  
 
   }
+  searchActive(value:any){
+       String(value).toLowerCase()
+       this.noProductsfound = false
 
-}
+         this.displayProducts = this.Products.filter((product) =>  product.name.toLowerCase().includes(value))
+
+           console.log(this.displayProducts.length)
+
+              if(this.displayProducts.length === 0){
+                
+                this.noProductsfound= true
+      }else{
+        this.noProductsfound = false
+      }
+     
+    }
+  
+  }
+

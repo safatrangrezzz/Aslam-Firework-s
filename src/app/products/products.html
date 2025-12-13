@@ -23,8 +23,26 @@
     </section>
    
   <!-- -------------------------produts list---------------------- -->
+    <div class="container-fluid py-2 py-md-3">
+   <div class="row justify-content-center justify-content-lg-end px-1">
+  <form class="col-12 col-md-10 col-lg-8 d-flex">
+            <input class="rounded-start py-2 px-3" (input)="searchActive(search.value)" #search style="width: 100%;"
+                  placeholder="Search for products…" >
+            <button class="px-3 btn-search rounded-end fs-5">
+                <i class="bi bi-search"></i>
+            </button>
+        </form>
+        </div>
+        </div>
   <div class="container-fluid">
   <div class="row justify-content-center">
+   
+     @if(noProductsfound){
+
+       <div class="d-flex justify-content-center pt-5" style="height:100vh; color: gray ;">
+        <h1> No Products found for ' {{search.value}} '</h1>
+      </div>
+    }
   @for( product of displayProducts ; track product){
 <div class="col-6 col-md-4 col-lg-3">
       <div class="product-card p-2 shadow-sm text-center m-2 mx-md-4">
