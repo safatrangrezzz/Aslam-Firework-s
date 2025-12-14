@@ -40,7 +40,7 @@ filterProducts(value:any){
       let strVal = String(value).toLowerCase()
        this.noProductsfound = false
 
-         this.displayProducts = this.Products.filter((product) =>  product.name.toLowerCase().includes(strVal))
+         this.displayProducts = this.displayProducts.filter((product) =>  product.name.toLowerCase().includes(strVal))
 
            console.log(this.displayProducts.length)
 
