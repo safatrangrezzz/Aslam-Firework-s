@@ -10,6 +10,15 @@ import { DataBaseService } from '../data-base-service';
 })
 export class DataEditComponent {
 
+  
+  editForm:boolean = false
+   tempobj:any={
+      naam:'',
+      price:'',
+      brand:'',
+      cat:'',
+  }
+
  dataBaseData:any[]=[]
 
 
@@ -24,7 +33,42 @@ export class DataEditComponent {
     this.router.navigate(['admin'])
   }
    
+id:any = ''
 
+  edit(index:any){
+    this.editForm = true
+    this.id = index
+    console.log('click')
+  }
+ 
+  cancel(){
+    this.editForm = false
+  }
 
+ 
+  
+  apply(name:any,brand:any,price:any,category:any){
+
+    if(name === '' || brand === '' || price === '' || category == ''){
+      name = this.dataBaseData[this.id].name
+      brand = this.dataBaseData[this.id].brand
+      price = this.dataBaseData[this.id].price
+      category = this.dataBaseData[this.id].Category
+
+      
+      
+      console.log(this.id,name,brand,price,category)
+      console.log(this.dataBaseData[this.id].name)
+      
+    }else{
+      console.log(name,brand,price,category)
+
+      this.dataBaseData[this.id].name = name
+      this.dataBaseData[this.id].brand = brand
+      this.dataBaseData[this.id].price = price
+      this.dataBaseData[this.id].Category = category
+    }
+      this.editForm = false
+  }
 
 }

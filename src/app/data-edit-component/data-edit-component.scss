@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+h2{
+    color:#051747
+}
 button{
     background-color: #051747;
     color:white
@@ -10,19 +13,21 @@ button{
     text-align: center;
     h1{
         font-family: Arial, Helvetica, sans-serif;
-        color:red;
-        padding:6px 0px
+        color:rgb(10, 1, 63);
+        padding:6px 
     }
 }
-.col,.col-4{
-    border:1px solid black;
+.col,.col-1{
+    border-bottom: 0.5px solid #c4c4c4;
+    border-top: 0.5px solid #c4c4c4;
+    border-left: 0.5px solid #c4c4c4;
 }
 .data-box{
 
     h3{
         color:green;
         text-align: center;
-        padding-top: 3px;
+        padding-top: 8px;
     }
     img{
         height: 50px;
