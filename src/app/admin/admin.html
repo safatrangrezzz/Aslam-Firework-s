@@ -1,34 +1,29 @@
 <section class="container ">
-    <div class="row justify-content-center p-4">
-      <div class="col-11 col-sm-8 col-md-6 col-lg-4">
-        <div class="card shadow-lg border-0 rounded-4">
-          <div class="card-header text-center text-white fw-semibold">
-            Secure Access
-          </div>
-
-          <div class="card-body">
-            <form>
-              <div class="mb-3">
-                <label class="form-label">Admin ID</label>
-                <input type="text" class="form-control" placeholder="Enter your id" required #userId>
-              </div>
-
-              <div class="mb-3">
-                <label class="form-label">Access Key</label>
-                <input type="password" class="form-control" placeholder="Enter your access key" required #userAccessKey>
-              </div>
-
-              <button type="submit" class="btn text-white w-100 py-2 fw-semibold" (click)="Login(userId.value,userAccessKey.value)">
-                Login
-              </button>
-              <p class="text-center fs-5 fw-semibold my-1">Or</p>
-            </form>
-            <button class="btn text-white w-100  py-2 fw-semibold" (click)="alreadyLogin()">Already Login</button>
-            
-          </div>
-
+  <div class="row justify-content-center p-4">
+    <div class="col-11 col-sm-8 col-md-6 col-lg-4">
+      <div class="card shadow-lg border-0 rounded-4">
+        <div class="card-header text-center text-white fw-semibold">
+          Secure Access
         </div>
-
+        <div class="card-body">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Admin ID</label>
+              <input type="text" class="form-control" placeholder="Enter your id" required #userId>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Access Key</label>
+              <input type="password" class="form-control" placeholder="Enter your access key" required #userAccessKey>
+            </div>
+            <button type="submit" class="btn text-white w-100 py-2 fw-semibold"
+              (click)="Login(userId.value,userAccessKey.value)">
+              Login
+            </button>
+            <p class="text-center fs-5 fw-semibold my-1">Or</p>
+          </form>
+          <button class="btn text-white w-100  py-2 fw-semibold" (click)="alreadyLogin()">Already Login</button>
+        </div>
       </div>
     </div>
+  </div>
 </section>

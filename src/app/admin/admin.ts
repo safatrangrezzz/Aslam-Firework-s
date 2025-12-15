@@ -32,7 +32,5 @@ alreadyLogin(){
  } else(
   alert('access not allow Please login First')
  )
-
 }
-
 }

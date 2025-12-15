@@ -9,7 +9,7 @@ import { authGuard } from './auth-guard';
 
 export const routes: Routes = [
     {path: '', redirectTo: 'home', pathMatch: 'full'},
-    {path: 'home', component: SubLandingPage,title: 'Aslam Fireworks home'},
+    {path: 'home', component: SubLandingPage, children: [ { path : 'home/products', component: Products}],title: 'Aslam Fireworks home'},
     {path: 'about', component: About,title: 'Aslam Fireworks about' },
     {path: 'products', component: Products,title: 'Aslam Fireworks products'},
     {path: 'safety', component:SafetyGuide,title: 'Aslam Fireworks safety'},
