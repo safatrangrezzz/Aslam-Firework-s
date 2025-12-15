@@ -11,17 +11,17 @@
                 <form class="w-100">
                     <h2 class="text-center">Edit Product Data</h2>
                     <label>Product Name</label>
-                    <input type="text" class="w-100 p-1" placeholder="Enter Product Name" #productName>
+                    <input type="text" class="w-100 p-1" placeholder="Enter Product Name" required value="{{tempobj.name}}"  #name>
                     <label>Product Brand</label>
-                    <input type="text" class="w-100 p-1" placeholder="Product Brand Name" #productBrand>
+                    <input type="text" class="w-100 p-1" placeholder="Product Brand Name"  required value="{{tempobj.brand}}"  #brand>
                     <label>Product Price</label>
-                    <input type="text" class="w-100 p-1" placeholder="Product Price" #productPrice>
+                    <input type="text" class="w-100 p-1" placeholder="Product Price" required value="{{tempobj.price}}"  #price>
                     <label>Product Category</label>
-                    <input type="text" class="w-100 p-1" placeholder="Product Category" #productCategory>
+                    <input type="text" class="w-100 p-1" placeholder="Product Category required" value="{{tempobj.cat}}"   #cat>
 
                     <div class="w-100 mt-5 d-flex justify-content-around px-4">
                         <button type="button" class="btn bg-light text-dark py-2 px-4 border" (click)="cancel()">Cancel</button>
-                        <button type="button" class="btn py-2 px-4" (click)="apply(productName.value,productBrand.value,productPrice.value,productCategory.value)">Apply</button>
+                        <button type="button" class="btn py-2 px-4" (click)="apply(name.value,brand.value , price.value,cat.value)">Apply</button>
                     </div>
 
 
@@ -31,7 +31,7 @@
         </div>
     </div>
 }
-
+ 
     <div class="container-fluid">
         <div class="row w-100">
             <div class="container">
@@ -86,7 +86,7 @@
                 <h3><i class="bi bi-pencil-square fs-6" (click)="edit(i)"></i></h3>
             </div>
         <div class="col-1 pt-2">
-                <h3><i class="bi bi-trash3-fill fs-6 text-danger"></i></h3>
+                <h3><i class="bi bi-trash3-fill fs-6 text-danger" (click)="delete(i)"></i></h3>
             </div>
         </div>
     }
