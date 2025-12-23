@@ -1,7 +1,7 @@
   <div class="container-fluid content-body">
 <header>
-     <nav class="container-fluid px-3 px-md-3 py-1 py-md-2 bg-white">
-      <div class="row justify-content-between">
+     <nav class="container-fluid px-md-3 py-1 py-md-2 bg-white">
+      <div class="row justify-content-between px-md-2">
         <div class="col-1 text-center d-md-none fw-semibold me-2 fs-1 pt-1 pb-2" (click)="menuOpen()">{{menuStatus ? '☰' : '✖'}}</div>
         <div class="col-4 col-md-2 me-auto"><img src="mylogo.jpg" alt="" width="80"></div>
         <div class="col text-center menu-bar d-md-block" [ngClass]="menuStatus ? 'd-none' : 'd-block'">
@@ -10,7 +10,7 @@
             <li class="mx-lg-3"> <a routerLink="products" routerLinkActive="active" class="p-2">PRODUCTS</a></li>
             <li class="mx-lg-3"> <a routerLink="safety" routerLinkActive="active" class="p-2">SAFETY GUIDE</a></li>
             <li class="mx-lg-3"> <a routerLink="about" routerLinkActive="active" class="p-2">ABOUT US</a></li>
-            <li class="mx-lg-3"> <a routerLink="admin" routerLinkActive="active" class="p-2">ADMIN</a></li>
+            <li class="mx-lg-3"> <a (click)="admin()" routerLinkActive="active" class="p-2">ADMIN</a></li>
           </ul>
         </div>
         <div class="col-6 col-md-auto d-flex align-items-center justify-content-end justify-content-md-center  ps-md-2 pe-3 pe-md-0">

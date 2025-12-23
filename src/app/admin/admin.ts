@@ -24,13 +24,13 @@ Login(userId:any,userAccessKey:any){
 }
  
 }
-alreadyLogin(){
- const accessAvailable = localStorage.getItem('isLogin')
- console.log(accessAvailable)
- if(accessAvailable === 'true'){
-  this.router.navigate(['dataBase'])
- } else(
-  alert('access not allow Please login First')
- )
-}
+// alreadyLogin(){
+//  const accessAvailable = localStorage.getItem('isLogin')
+//  console.log(accessAvailable)
+//  if(accessAvailable === 'true'){
+//   this.router.navigate(['dataBase'])
+//  } else(
+//   alert('access not allow Please login First')
+//  )
+// }
 }

@@ -1,5 +1,5 @@
-import { Component, signal } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { Component, inject, signal } from '@angular/core';
+import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { Footer } from './footer/footer';
 import { CommonModule } from '@angular/common';
 
@@ -12,6 +12,8 @@ import { CommonModule } from '@angular/common';
 export class App {
   protected readonly title = signal('Aslam-fireworks');
 
+  router = inject(Router)
+
   menuStatus:boolean = true
 
   ulClick(){
@@ -22,6 +24,16 @@ export class App {
   menuOpen(){
     this.menuStatus= !this.menuStatus
   }
+  admin(){
+    const login = localStorage.getItem('isLogin')
+    if(login){
+      this.router.navigate(['dataBase'])
+    }
+    else{
+      alert('access not available first login please')
+    this.router.navigate(['admin'])
+  }
+}
   goWhatsapp(){
     window.open('https://wa.me/917235924091', '_blank')
   }
