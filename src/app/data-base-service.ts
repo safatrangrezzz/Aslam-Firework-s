@@ -167,7 +167,7 @@ export class DataBaseService {
       img: 'colourkoti-out.png',
       Category: 'pots'
     },
-    {name: 'Mori Mojto Creakling Pots',
+    {name: 'Mori Mojito Creakling Pots',
       brand: 'Mori',
       price: '649',
       OldPrice: '699',

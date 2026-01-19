@@ -1,65 +1,155 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-h2{
-    color:#051747
-}
-button{
-    background-color: #051747;
-    color:white
-}
-.products-name{
-    text-align: center;
-    h1{
-        font-family: Arial, Helvetica, sans-serif;
-        color:rgb(10, 1, 63);
-        padding:6px 
-    }
-}
-.col,.col-1{
-    border-bottom: 0.5px solid #c4c4c4;
-    border-top: 0.5px solid #c4c4c4;
-    border-left: 0.5px solid #c4c4c4;
-}
-.data-box{
- h3{
-        color:green;
-        text-align: center;
-        padding-top: 8px;
-    }
-    img{
-        height: 50px;
-    }
-}
+// *{
+//     padding: 0;
+//     margin: 0;
+// }
+// h2{
+//     color:#051747
+// }
+// button{
+//     background-color: #051747;
+//     color:white
+// }
+// .products-name{
+//     text-align: center;
+//     h1{
+//         font-family: Arial, Helvetica, sans-serif;
+//         color:rgb(10, 1, 63);
+//         padding:6px 
+//     }
+// }
+// .col,.col-1{
+//     border-bottom: 0.5px solid #c4c4c4;
+//     border-top: 0.5px solid #c4c4c4;
+//     border-left: 0.5px solid #c4c4c4;
+// }
+// .data-box{
+//  h3{
+//         color:green;
+//         text-align: center;
+//         padding-top: 8px;
+//     }
+//     img{
+//         height: 50px;
+//     }
+// }
+//  .img-close-btn{
+//     position: absolute;
+//     top: -10px;
+//     right: -10px;
+    
+//  }
+// @media(max-width:768px){
+//     .products-name{
+//         h1{
+//              font-size: 10px;
+//              font-weight: bold;
+//         }
+//     }
+//     .data-box{
+//         img{
+//             height: 40px;
+//         }
+//         h3{
+//             font-size: 9px;
+//     }
+// }}
+// @media(min-width:768px){
+//     .products-name{
+//         h1{
+//              font-size: 18px;
+//              font-weight: bold;
+//         }
+//     }
+//     .data-box{
+//         img{
+//             height: 60px;
+//         }
+//         h3{
+//             font-size: 15px;
+//     }
+// }}
 
-@media(max-width:768px){
-    .products-name{
-        h1{
-             font-size: 10px;
-             font-weight: bold;
+.admin-card {
+            background: #fff;
+            border: 1px solid #d1d3e2; /* Subtle border */
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            position: relative;
+            overflow: hidden;
         }
-    }
-    .data-box{
-        img{
-            height: 40px;
+
+        .admin-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-color: #4e73df; /* Highlight on hover */
         }
-        h3{
-            font-size: 9px;
-    }
-}}
-@media(min-width:768px){
-    .products-name{
-        h1{
-             font-size: 18px;
-             font-weight: bold;
+
+        /* Image Styling */
+        .card-img-top {
+            width: 100%;
+            height: 120px; /* Fixed height for uniformity */
+            object-fit: contain; /* Pura product dikhega, katega nahi */
+            padding: 10px;
+            background: #fff;
+            border-bottom: 1px solid #f0f0f0;
         }
-    }
-    .data-box{
-        img{
-            height: 60px;
+
+        /* --- ID Badge (Floating on Image) --- */
+        .id-badge {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            font-size: 0.65rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
         }
-        h3{
-            font-size: 15px;
-    }
-}}
+
+        /* --- Text Typography (Compact) --- */
+        .card-body {
+            padding: 8px;
+        }
+
+        .product-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #333;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; /* Lamba naam ... ho jayega */
+            margin-bottom: 4px;
+        }
+
+        .meta-info {
+            font-size: 0.7rem; /* Chota font sab fit karne k liye */
+            margin-bottom: 2px;
+            display: flex;
+            justify-content: space-between;
+            padding-right: 20px;
+        }
+
+        .price-tag {
+            font-weight: bold;
+            color: #028e19; /* Admin Green */
+            font-size: 1rem;
+        }
+
+        /* --- Action Buttons --- */
+        .card-footer-custom {
+            padding: 0 8px 8px 8px;
+            background: #fff;
+        }
+        
+        .btn-action {
+            font-size: 0.7rem;
+            padding: 2px 0;
+        }
+
+        /* Mobile specific tweak to fit 3 cards if screen allows, else 2 */
+        @media (max-width: 576px) {
+            .card-img-top { height: 90px; } /* Mobile pe image choti */
+            .product-title { font-size: 0.75rem; }
+            .meta-info { font-size: 0.6rem; flex-direction: column; } /* Mobile pe info niche aayegi */
+        }
