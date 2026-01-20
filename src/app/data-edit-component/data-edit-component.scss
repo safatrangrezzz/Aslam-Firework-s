@@ -2,9 +2,11 @@
 //     padding: 0;
 //     margin: 0;
 // }
-// h2{
-//     color:#051747
-// }
+ .card-header , .addBtn{
+        background-color:#051747;
+        color: white;
+}
+
 // button{
 //     background-color: #051747;
 //     color:white
@@ -127,7 +129,7 @@
             margin-bottom: 2px;
             display: flex;
             justify-content: space-between;
-            padding-right: 20px;
+            padding-right: 15px;
         }
 
         .price-tag {
@@ -151,5 +153,5 @@
         @media (max-width: 576px) {
             .card-img-top { height: 90px; } /* Mobile pe image choti */
             .product-title { font-size: 0.75rem; }
-            .meta-info { font-size: 0.6rem; flex-direction: column; } /* Mobile pe info niche aayegi */
+            .meta-info { font-size: 0.8rem; } /* Mobile pe info niche aayegi */
         }

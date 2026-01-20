@@ -15,7 +15,7 @@ export class DataEditComponent {
 
 
   // id: any = ''
-  // editForm: boolean = false
+  
   // imgPopUp: boolean = false
   // img:string = ''
   // tempobj: any = {
@@ -27,6 +27,7 @@ export class DataEditComponent {
 
   allData: any[] = [];
   dataBaseData: any[] = [];
+  editForm: boolean = false
 
 
   constructor(private router: Router, private _dataBaseService: DataBaseService) {
@@ -41,9 +42,22 @@ export class DataEditComponent {
     localStorage.setItem('isLogin', 'false')
     this.router.navigate(['admin'])
   }
+  onNewProductadd(){
+    this.editForm = true
+  }
   delete(index: any) {
     this.dataBaseData.splice(index, 1)
   }
+  edit(){
+    this.editForm = true
+  }
+  onCancle(){
+    this.editForm = false
+  }
+  onAdd(){
+    this.editForm = false
+  }
+
 
 
   // edit(index: any) {
