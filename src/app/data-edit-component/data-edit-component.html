@@ -1,3 +1,5 @@
+
+<h1 class="fs1 text-center text-primary bg-light">ASLAM FIRE WORKS</h1>
 <section>
     <div class="container-fluid p-0">
         <div class="col-3 col-md-2 col-lg-1 ms-auto">
@@ -13,7 +15,9 @@
         </div>
         <div class="d-flex justify-content-between align-items-center mb-4 px-2">
             <h5 class="text-secondary fw-bold"><i class="fas fa-box-open me-2"></i>Product Inventory</h5>
-            <button class="btn btn-primary btn-sm"(click)="onNewProductadd()"><i class="fas fa-plus"></i> Add New + </button>
+            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                    class="fas fa-plus"></i> Add New +
+            </button>
         </div>
         <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-2">
 
@@ -21,7 +25,7 @@
             <div class="col">
                 <div class="admin-card h-100">
                     <span class="id-badge">ID: 101</span>
-                    <img src="{{item.img}}" class="card-img-top" alt="Product">
+                    <img src="{{item.image}}" class="card-img-top">
                     <div class="card-body">
                         <div class="product-title">{{item.name}}</div>
 
@@ -31,7 +35,7 @@
                         </div>
                         <div class="meta-info">
                             <span>Category :</span>
-                            <span> {{item.Category}}</span>
+                            <span> {{item.categoryId}}</span>
                         </div>
 
                         <div class="d-flex justify-content-between align-items-center mt-2">
@@ -41,11 +45,14 @@
                     <div class="card-footer-custom">
                         <div class="row g-1">
                             <div class="col-6">
-                                <button class="btn btn-outline-primary w-100 btn-action" (click)="edit()"><i class="bi bi-pencil-square"></i>
+                                <button class="btn btn-outline-primary w-100 btn-action" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop"><i class="bi bi-pencil-square"></i>
                                     Edit</button>
                             </div>
+                            
                             <div class="col-6">
-                                <button class="btn btn-outline-danger w-100 btn-action" (click)="delete(i)"><i class="bi bi-trash"></i>
+                                <button class="btn btn-outline-danger w-100 btn-action" (click)="delete(item.id)"><i
+                                        class="bi bi-trash"></i>
                                     Delete</button>
                             </div>
                         </div>
@@ -55,56 +62,58 @@
             }
         </div>
     </div>
-    @if(editForm){
-    <div class="container-fluid position-absolute top-0  pt-4" > 
-        <div class="row justify-content-center">
-            <div class="col-11 col-md-8 col-lg-6 rounded">
-                <div class="card">
-                    <h3 class="card-header text-center p-3">ADD NEW PRODUCT</h3>
-                    <div class="card-body">
-                        <form>
-                            <div class="row p-2">
-                                <div class="col-12">
-                                    <label for="img">Preview File</label>
-                                    <div class="text-center border">
-
-                                        <img src="" height="100" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <label for="img">Product Image</label>
-                                    <input type="file" id="img" class="form-control">
-                                </div>
-                                <div class="col-12">
-                                    <label for="name">Name</label>
-                                    <input type="text" id="name" class="form-control">
-                                </div>
-                                <div class="col-12">
-                                    <label for="Brand">Brand</label>
-                                    <input type="text" id="Brand" class="form-control">
-                                </div>
-                                <div class="col-6">
-                                    <label for="Category">Category</label>
-                                    <input type="text" id="Category" class="form-control">
-                                </div>
-                                <div class="col-6">
-                                    <label for="Price">Price</label>
-                                    <input type="text" id="Price" class="form-control">
-                                </div>
+    <!-- Modal form -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-4 m-auto">Add New Product</h1>
+                </div>
+                <div class="modal-body">
+                    <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+                        <div class="col-12">
+                            <label for="img">Preview File</label>
+                            <div class="text-center border">
+                                <img [src]="base64String" height="100" alt="no file." accept="image/">
                             </div>
-                            <div class="row mt-3">
-                                <div class="col-6 text-center">
-                                    <button class="btn btn-secondary" (click)="onCancle()">Cancel</button>
-                                </div>
-                                <div class="col-6 text-center">
-                                    <button class="btn addBtn px-3" (click)="onAdd()">Add</button>
-                                </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="img">Product Image</label>
+                            <input type="file" (change)="onFilechange($event)" formControlName="image" id="img" class="form-control">
+                        </div>
+                        <div class="col-12">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" class="form-control" formControlName="name">
+                        </div>
+                        <div class="col-12">
+                            <label for="Brand">Brand</label>
+                            <input type="text" id="Brand" class="form-control" formControlName="brand">
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="Category">Category</label>
+                                <input type="text" id="Category" class="form-control" formControlName="category">
                             </div>
-                        </form>
-                    </div>
+                            <div class="col-6">
+                                <label for="Price">Price</label>
+                                <input type="text" id="Price" class="form-control" formControlName="price">
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-6 text-center">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                    (click)="onCancle()">Cancel</button>
+                            </div>
+                            <div class="col-6 text-center">
+                                <button type="submit" class="btn addBtn px-3" data-bs-dismiss="modal">Add</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-}
 </section>
+
+
