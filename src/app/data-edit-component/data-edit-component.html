@@ -1,5 +1,4 @@
 
-<h1 class="fs1 text-center text-primary bg-light">ASLAM FIRE WORKS</h1>
 <section>
     <div class="container-fluid p-0">
         <div class="col-3 col-md-2 col-lg-1 ms-auto">
@@ -25,7 +24,7 @@
             <div class="col">
                 <div class="admin-card h-100">
                     <span class="id-badge">ID: 101</span>
-                    <img src="{{item.image}}" class="card-img-top">
+                    <img src="{{item.img}}" class="card-img-top">
                     <div class="card-body">
                         <div class="product-title">{{item.name}}</div>
 
@@ -45,8 +44,8 @@
                     <div class="card-footer-custom">
                         <div class="row g-1">
                             <div class="col-6">
-                                <button class="btn btn-outline-primary w-100 btn-action" data-bs-toggle="modal"
-                                    data-bs-target="#staticBackdrop"><i class="bi bi-pencil-square"></i>
+                                <button class="btn btn-outline-primary w-100 btn-action" 
+                                    ><i class="bi bi-pencil-square"></i>
                                     Edit</button>
                             </div>
                             
@@ -71,7 +70,7 @@
                     <h1 class="modal-title fs-4 m-auto">Add New Product</h1>
                 </div>
                 <div class="modal-body">
-                    <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+                    <form>
                         <div class="col-12">
                             <label for="img">Preview File</label>
                             <div class="text-center border">
@@ -80,24 +79,24 @@
                         </div>
                         <div class="col-12">
                             <label for="img">Product Image</label>
-                            <input type="file" (change)="onFilechange($event)" formControlName="image" id="img" class="form-control">
+                            <input type="file" (change)="onFilechange($event)" class="form-control">
                         </div>
                         <div class="col-12">
                             <label for="name">Name</label>
-                            <input type="text" id="name" class="form-control" formControlName="name">
+                            <input type="text" id="name" class="form-control">
                         </div>
                         <div class="col-12">
                             <label for="Brand">Brand</label>
-                            <input type="text" id="Brand" class="form-control" formControlName="brand">
+                            <input type="text" id="Brand" class="form-control">
                         </div>
                         <div class="row">
                             <div class="col-6">
                                 <label for="Category">Category</label>
-                                <input type="text" id="Category" class="form-control" formControlName="category">
+                                <input type="text" id="Category" class="form-control">
                             </div>
                             <div class="col-6">
                                 <label for="Price">Price</label>
-                                <input type="text" id="Price" class="form-control" formControlName="price">
+                                <input type="text" id="Price" class="form-control">
                             </div>
                         </div>
                         <div class="row mt-3">
